@@ -1,13 +1,13 @@
 def sort_array_asc(array)
-  array.sort do |a, b|
-  a <=> b
-end
+    array.sort do |a, b|
+   a <=> b
+  end
 end
 
 def sort_array_desc(array)
-  array.sort do |a, b|
-  b <=> a
-end
+   array.sort do |a, b|
+   b <=> a
+  end
 end
 
 def sort_array_char_count(array)
@@ -31,7 +31,7 @@ end
 def kesha_maker(array)
 array.each do |strings|
   strings[2] = "$"
-end
+  end
 end
 
 def find_a(array)
@@ -40,26 +40,26 @@ def find_a(array)
   while i < array.length
     arraya << array[i] if array[i].start_with?('a')
     i = i + 1
-  end
+   end
   return arraya
 end
 
 def sum_array(array)
-sumarray = 0
-i = 0
-while i < array.length
-sumarray = array[i] + sumarray
-i = i + 1
-end
-return sumarray
+    sumarray = 0
+    i = 0
+  while i < array.length
+    sumarray = array[i] + sumarray
+    i = i + 1
+  end
+  return sumarray
 end
 
 def add_s(array)
-array.each_with_index.collect{|element, index|  
-if index == 1
-    element = element
-  else
+  array.each_with_index.collect{|element, index|  
+    if index == 1
+     element = element
+    else
     element = element + "s"
   end
-}
+  }
 end
